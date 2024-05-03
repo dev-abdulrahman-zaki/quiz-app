@@ -1,0 +1,29 @@
+/* ===== Start General Rules ===== */
+:root {background-color: #ecf5ff; font-family: "Work Sans", sans-serif;}
+body{
+    display: flex;  justify-content: center;  align-items: center;  min-height: 100vh;
+    background-color: #ecf5ff2a;
+}
+/* ===== End General Rules ===== */
+
+.quiz .container > div{
+    background-color: #cccccc42;
+}
+
+/* Start Page Loader */
+.loader {
+    width: 100%; height: 100vh; background-color: #08040459;
+    display: flex; justify-content: center; align-items:center;
+    position: fixed; z-index: 99999999999;
+    left: 0; top: 0;
+  }
+  .spinner-border{width: 3.5rem; height: 3.5rem;}
+/* End Page Loader */
+
+div[data-questionNumber].wrongAnswer .question p{
+    background-color: #F8D7DA;
+}
+div[data-questionNumber].correctAnswer .question p{
+    background-color: #D4EDDA;
+}
+h1 {font-size: 3.4rem; color: #56a5eb;}
